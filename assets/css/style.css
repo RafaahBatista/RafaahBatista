@@ -1,0 +1,332 @@
+:root{
+  --texto: #f8f8f8;
+  --fundo: #151f29;
+  --cor1: #ff715a;
+}
+
+html{scroll-behavior: smooth;}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.min-max-height{
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.linha{
+  padding-block: 1px;
+  background-color: #3b3b3b;
+}
+
+body{
+  background-image: url(
+    "../../img/wallpaper_cinza.avif"
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+
+header{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--texto);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2vh 5vh;
+}
+
+header h1{
+  font-size: 3vh;
+  color: #3cb371;
+  padding-block: 2vh;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+  gap: 3vh;
+}
+
+header div a{
+  color: var(--texto);
+  text-decoration: none;
+  margin-right: 2vh;
+  font-size: 2.5vh;
+  transition: 0.2s;
+  padding-block: 2vh;
+  border-bottom: 2px solid transparent;
+}
+
+header div a.active{
+  border-bottom: 2px solid #3cb371;
+}
+
+/* HOME */
+
+section#home{
+  background-image: url(
+    "../../img/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg"
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30vh 20vh;
+  width: 100%;
+}
+
+section#home h1{
+  font-size: 8vh;
+  font-weight: bold;
+  background: linear-gradient(
+    to bottom,
+    #679f5a, #3cb371, #e3e9e8
+    );
+  background-clip: text;
+  color: transparent;
+  line-height: 10vh;
+}
+
+section#home p:first-of-type{
+  color: #679f5a;
+}
+
+section#home p{
+  color: #e3e9e8;
+  line-height: 3vh;
+}
+
+/* ABOUT */
+
+section#about{
+  background-color: var(--fundo);
+  color: var(--texto);
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  padding-block: 10vh;
+  align-items: center;
+  padding-inline: 5vh;
+}
+
+section#about div{
+  flex: 1;
+}
+
+section#about img{
+  border-radius: 50%;
+  width: 50vh;
+  height: 50vh;
+  border: 2px solid #3cb371
+}
+
+section#about h2{
+  padding-top: 2vh;
+}
+.carousel{
+    padding: 10px 0;
+    overflow: hidden;
+    display: flex;
+    background-color: var(--fundo);
+    color: #3cb371;
+    > * {
+      flex: 0 0 100%;
+    }    
+}.card{
+    width: 100%;
+    border-radius: 2vh;
+    box-shadow: rgba(0, 0, 0, 30%) 5px 5px 20px 0;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}.group{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    animation: scrolling 10s linear infinite;    
+}@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+/* EXPERIENCES */
+section#experiences{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    #001c33, #0063b3, #d1ebff
+  );
+  align-items: center;
+}
+
+section#experiences section.iveco,
+section#experiences section.cedro{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20vh;
+  flex: 1;
+  img{
+    width: 60vh;
+    border: 2px solid #329aff;
+  }
+}
+
+section#experiences section{
+  text-align: center;
+  padding-inline: 5vh;
+}
+
+section#experiences div{
+  text-align: center;
+}section#experiences p{
+  color: #fff;
+  padding-top: 3vh;
+  width: 80%; /* ou o tamanho que quiser */
+  margin: 0 auto;
+  text-align: center;
+}section#experiences p em{
+  color: #b8dcff;
+  font-style: italic;
+}section#experiences h1{
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+/* CONTATO */
+section#contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  h1{
+    padding-bottom: 5vh;
+    color: #993399;
+    font-size: 4vh;
+    font-weight: bold;
+  }h2{
+    color: #b34db2;
+    font-size: 3vh;
+  }p{
+    color: #696969;
+  }a{
+    color: #993399;
+    text-decoration: none;
+    line-height: 5vh;
+  }i{
+    color: #993399;
+    margin-right: 2vh;
+  }div{flex: 1;
+  }img{
+  max-width: 100vh;
+  align-self: flex-end;    
+  }button{
+    background-color: white;
+    border: 1px solid #ff942c;
+    color: #ff942c;
+  }
+}
+
+section#contact .linha{
+  margin-block: 3vh;
+  background: linear-gradient(
+    to right,
+    #fff, #993399, #fff
+  );
+  border-radius: 5vh;
+}
+
+section#contact .faicon{
+  display: flex;
+  justify-content: center;
+  font-size: 4vh;
+  gap: 5vh;
+  margin-top: 3vh;
+  a{
+    text-decoration: none;
+    color: #ff942c;
+  }
+}
+
+/* TIMELINE */
+.timeline{
+  position: relative;
+  padding: 0 20px;
+  flex: 1;
+  h2{
+  text-align: center;
+  margin-bottom: 40px;
+  color: #3cb371;
+  font-size: 3vh;   
+  }h3{
+    color: #6bbf91;
+  }h4{
+    line-height: 4vh;
+  }p{
+    color: #e0e0e0;
+    line-height: 3vh;
+  }a{
+    color: #6bbf91;
+  }
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px; /* posição da linha */
+  width: 1px;
+  height: 100%;
+  background: #3cb371;
+}
+
+.timeline-item{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.timeline-dot{
+  position: absolute;
+  top: 2vh;
+  left: -25.5px; /* posição da bolinha */
+  width: 10px;
+  height: 10px;
+  background: #3cb371;
+  border-radius: 50%;
+}
+
+.timeline-content{
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.timeline.b h3, .timeline.b p{
+  text-align: right;
+}
+
+.timeline.b::before{
+  right: 0px;
+  left: auto;
+}
+
+.timeline-dot.b{
+  right: -25.5px;
+  left: auto;
+}
