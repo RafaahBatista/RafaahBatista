@@ -7,6 +7,7 @@
 - **Telefone:** (31) 9 8975-4025 | (31) 9 8871-2916  
 - **E-mail:** rafaellbss12@gmail.com  
 - **LinkedIn:** [linkedin.com/in/rafael-batista](https://www.linkedin.com)  
+- **Portfólio:** [rafaahbatista.github.io/RafaahBatista](https://rafaahbatista.github.io/RafaahBatista/)
 
 ---
 
