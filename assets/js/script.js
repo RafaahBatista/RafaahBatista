@@ -8,7 +8,7 @@ function teste(element) {
 
 function download(nome){
   const link = document.createElement("a");
-  link.href = `/docs/${nome} CR.pdf`; // caminho do PDF
+  link.href = `rafaahbatista.github.io/RafaahBatista/docs/${nome} CR.pdf`; // caminho do PDF
   link.download = `${nome}.pdf`;  // nome do arquivo ao baixar
   link.click(); // dispara o download
 }
